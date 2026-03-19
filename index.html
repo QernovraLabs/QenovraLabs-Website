@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qenovra Labs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Qenovra Labs</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#vision">Vision</a>
+      <a href="#builds">What We Build</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#vision" onclick="closeMobile()">Vision</a>
+    <a href="#builds" onclick="closeMobile()">What We Build</a>
+    <a href="#contact" onclick="closeMobile()">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-welcome reveal">
+      <span class="welcome-line"></span>
+      <span class="welcome-text">Welcome to Qenovra Labs</span>
+      <span class="welcome-line"></span>
+    </div>
+    <div class="hero-eyebrow reveal delay-1">The future of intelligent companies</div>
+    <h1 class="hero-title reveal delay-2">
+      <span class="line">Intelligence</span>
+      <span class="line accent-word">at scale.</span>
+    </h1>
+    <p class="hero-body reveal delay-3">
+      Qenovra Labs is building the next generation of autonomous AI systems — engineered to think, create, and operate with unprecedented capability.
+    </p>
+    <div class="hero-actions reveal delay-4">
+      <a href="#about" class="btn-primary">Discover Qenovra</a>
+      <a href="#vision" class="btn-ghost">Our Vision</a>
+    </div>
+    <div class="hero-social reveal delay-4">
+      <a href="mailto:hello.qenovra@gmail.com?subject=Hello%20Qenovra%20Labs&body=Hi%20Qenovra%20Labs%20team%2C%0A%0AI%20wanted%20to%20reach%20out%20because..." class="hero-social-link" title="Email">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M1 5.5L8 9.5L15 5.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        hello.qenovra@gmail.com
+      </a>
+      <span class="hero-social-dot"></span>
+      <a href="https://x.com/qenovralabs" target="_blank" rel="noopener" class="hero-social-link" title="Twitter / X">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L5.8 7.4M13 13L8.2 6.6M5.8 7.4L0 13H3.5L8.2 6.6M5.8 7.4L7.2 5.2M8.2 6.6L6.8 8.8M14 1H10.5L7.2 5.2M1 1H4.5L7.2 5.2M6.8 8.8H10L14 1M6.8 8.8L3.5 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        @qenovralabs
+      </a>
+      <span class="hero-social-dot"></span>
+      <a href="https://www.linkedin.com/in/qenovra-labs-96ab0b3b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="hero-social-link" title="LinkedIn">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><rect x="1" y="1" width="13" height="13" rx="2.5" stroke="currentColor" stroke-width="1.2"/><line x1="4" y1="6.5" x2="4" y2="11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="4" cy="4" r="0.8" fill="currentColor"/><path d="M7 11V8.5C7 7.4 7.9 6.5 9 6.5C10.1 6.5 11 7.4 11 8.5V11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="7" y1="6.5" x2="7" y2="11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint reveal delay-4">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- STATEMENT BAND -->
+<div class="statement-band">
+  <p class="statement-text reveal">
+    "We are not building software.<br>
+    <em>We are building the intelligence that builds software.</em>"
+  </p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-label reveal">About</div>
+        <h2 class="section-title reveal delay-1">
+          A new kind<br>of company.
+        </h2>
+      </div>
+      <div class="about-right">
+        <p class="about-lead reveal delay-1">
+          Qenovra Labs is not a software agency, not a consultancy, and not a typical AI startup. We are an autonomous AI organization — a new category entirely.
+        </p>
+        <p class="about-body reveal delay-2">
+          Founded with a singular obsession: to push the boundaries of what autonomous intelligence can do. We operate at the intersection of AI research and real-world product creation, building systems that work independently, continuously, and at a scale no human team could match.
+        </p>
+        <p class="about-body reveal delay-3">
+          From India, for the world.
+        </p>
+        <div class="about-stats reveal delay-4">
+          <div class="stat">
+            <div class="stat-value">24<span class="stat-unit">hrs</span></div>
+            <div class="stat-label">Always operating</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Scale potential</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-value">01</div>
+            <div class="stat-label">India's first of its kind</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISUAL BREAK -->
+<div class="visual-break">
+  <canvas id="orbCanvas"></canvas>
+  <div class="orb-text reveal">
+    <span class="orb-label">Powered by</span>
+    <span class="orb-headline">Autonomous Intelligence</span>
+  </div>
+</div>
+
+<!-- VISION -->
+<section id="vision">
+  <div class="container">
+    <div class="section-label reveal">Vision</div>
+    <h2 class="section-title vision-title reveal delay-1">
+      The future belongs<br>to those who build it<br><em>intelligently.</em>
+    </h2>
+
+    <div class="vision-pillars">
+      <div class="pillar reveal delay-1">
+        <div class="pillar-num">01</div>
+        <div class="pillar-content">
+          <h3 class="pillar-title">Autonomous by design</h3>
+          <p class="pillar-body">Our systems are built from the ground up to operate without constant human oversight. Not automated — genuinely autonomous.</p>
+        </div>
+      </div>
+      <div class="pillar reveal delay-2">
+        <div class="pillar-num">02</div>
+        <div class="pillar-content">
+          <h3 class="pillar-title">Intelligence that improves</h3>
+          <p class="pillar-body">Every output makes the next one better. We build systems that learn from their own work and continuously raise the bar.</p>
+        </div>
+      </div>
+      <div class="pillar reveal delay-3">
+        <div class="pillar-num">03</div>
+        <div class="pillar-content">
+          <h3 class="pillar-title">India leading the world</h3>
+          <p class="pillar-body">We believe the next great wave of AI innovation will come from India. We are building that proof, one system at a time.</p>
+        </div>
+      </div>
+      <div class="pillar reveal delay-4">
+        <div class="pillar-num">04</div>
+        <div class="pillar-content">
+          <h3 class="pillar-title">Scale without limits</h3>
+          <p class="pillar-body">Human teams grow linearly. Our systems grow exponentially. We are building a new model for what a company can become.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE BUILD -->
+<section id="builds">
+  <div class="container">
+    <div class="builds-header">
+      <div class="section-label reveal">What We Build</div>
+      <h2 class="section-title reveal delay-1">Products that<br>push the edge.</h2>
+      <p class="builds-intro reveal delay-2">We build AI tools, automation systems, and intelligent platforms that redefine what's possible. Every product we create is designed for one thing — to operate smarter than anything before it.</p>
+    </div>
+
+    <div class="builds-grid">
+      <div class="build-card reveal delay-1">
+        <div class="build-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.2"/><circle cx="14" cy="14" r="4" fill="currentColor" opacity="0.3"/><line x1="14" y1="4" x2="14" y2="8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="14" y1="20" x2="14" y2="24" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="4" y1="14" x2="8" y2="14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><line x1="20" y1="14" x2="24" y2="14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="build-title">AI Tools</h3>
+        <p class="build-body">Precision-engineered AI tools for developers, creators, and businesses. Built to be fast, reliable, and genuinely useful.</p>
+      </div>
+
+      <div class="build-card reveal delay-2">
+        <div class="build-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><rect x="16" y="4" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><rect x="4" y="16" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><rect x="16" y="16" width="8" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <h3 class="build-title">Automation Systems</h3>
+        <p class="build-body">End-to-end automation that handles complexity. Systems that replace repetitive processes with intelligent, adaptive workflows.</p>
+      </div>
+
+      <div class="build-card reveal delay-3">
+        <div class="build-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4 L24 9 L24 19 L14 24 L4 19 L4 9 Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M14 4 L14 24" stroke="currentColor" stroke-width="1.2" opacity="0.4"/><path d="M4 9 L24 19" stroke="currentColor" stroke-width="1.2" opacity="0.4"/><path d="M24 9 L4 19" stroke="currentColor" stroke-width="1.2" opacity="0.4"/></svg>
+        </div>
+        <h3 class="build-title">Intelligent Platforms</h3>
+        <p class="build-body">Full-stack platforms powered by autonomous intelligence. Designed to scale, adapt, and improve without intervention.</p>
+      </div>
+
+      <div class="build-card reveal delay-4">
+        <div class="build-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 22 L14 6 L22 22" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/><line x1="8.5" y1="17" x2="19.5" y2="17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="build-title">Developer Infrastructure</h3>
+        <p class="build-body">Tools built by developers, for developers. Infrastructure that makes building with AI faster, safer, and more powerful.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL-BLEED CTA -->
+<section id="contact">
+  <canvas id="ctaCanvas"></canvas>
+  <div class="cta-content">
+    <div class="section-label reveal" style="text-align:center;justify-content:center">Get in Touch</div>
+    <h2 class="cta-title reveal delay-1">Ready to explore<br>what's possible?</h2>
+    <p class="cta-body reveal delay-2">Whether you're a potential partner, an early adopter, or simply curious about what we're building — we'd love to hear from you.</p>
+    <div class="cta-actions reveal delay-3">
+      <a href="mailto:hello.qenovra@gmail.com?subject=Hello%20Qenovra%20Labs&body=Hi%20Qenovra%20Labs%20team%2C%0A%0AI%20wanted%20to%20reach%20out%20because..." class="btn-primary-large">hello.qenovra@gmail.com</a>
+    </div>
+    <p class="cta-location reveal delay-4">Based in India &nbsp;·&nbsp; Building for the world</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Qenovra Labs</div>
+      <div class="footer-tagline">Building autonomous AI systems that build the future.</div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#builds">What We Build</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Connect</div>
+        <a href="mailto:hello.qenovra@gmail.com?subject=Hello%20Qenovra%20Labs&body=Hi%20Qenovra%20Labs%20team%2C%0A%0AI%20wanted%20to%20reach%20out%20because...">Contact</a>
+        <a href="https://x.com/qenovralabs" target="_blank" rel="noopener">Twitter / X</a>
+        <a href="https://www.linkedin.com/in/qenovra-labs-96ab0b3b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Qenovra Labs. All rights reserved.</span>
+    <span>Made in India</span>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<button id="chatToggle" class="chat-toggle" aria-label="Open chat" aria-controls="chatPanel" aria-expanded="false">
+  <span class="chat-toggle-icon">?</span>
+</button>
+
+<section id="chatPanel" class="chat-panel" aria-hidden="true" aria-label="Website assistant">
+  <div class="chat-head">
+    <div class="chat-head-title">Qenovra Assistant</div>
+    <button id="chatClose" class="chat-close" aria-label="Close chat">x</button>
+  </div>
+  <div id="chatMessages" class="chat-messages">
+    <div class="chat-msg bot">
+      Hi! I can help with Qenovra Labs info like vision, services, and contact details.
+    </div>
+  </div>
+  <form id="chatForm" class="chat-form">
+    <input id="chatInput" class="chat-input" type="text" placeholder="Ask something..." maxlength="280" autocomplete="off" required>
+    <button id="chatSend" class="chat-send" type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
