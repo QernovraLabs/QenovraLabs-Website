@@ -1,4 +1,4 @@
-# Qenovra Labs Website
+# Qenovra Lab Website
 
 Static frontend website with Vercel serverless backend endpoints.
 
@@ -9,31 +9,7 @@ Static frontend website with Vercel serverless backend endpoints.
 - `script.js` - Frontend behavior and animations
 - `api/health.js` - Health check API endpoint
 - `api/contact.js` - Contact API endpoint (POST)
-- `api/chat.js` - Chatbot reply API endpoint (POST)
 - `vercel.json` - Vercel deployment configuration
-
-## Chatbot AI Setup (OpenRouter)
-
-1. Copy `.env.example` to `.env.local`
-2. Set `OPENROUTER_API_KEY` in `.env.local`
-3. Optional: change `OPENROUTER_MODEL`
-
-Example `.env.local`:
-
-```bash
-OPENROUTER_API_KEY=your_real_key_here
-OPENROUTER_MODEL=openai/gpt-4o-mini
-OPENROUTER_SITE_URL=http://localhost:3000
-OPENROUTER_SITE_NAME=Qenovra Labs Website (Local)
-```
-
-For Vercel production:
-
-1. Open your project in Vercel dashboard
-2. Go to Settings -> Environment Variables
-3. Add `OPENROUTER_API_KEY`
-4. Add optional `OPENROUTER_MODEL`, `OPENROUTER_SITE_URL`, `OPENROUTER_SITE_NAME`
-5. Redeploy
 
 ## Local Run
 
@@ -56,7 +32,6 @@ Open: `http://localhost:3000`
 API endpoints:
 - `GET /api/health`
 - `POST /api/contact`
-- `POST /api/chat`
 
 Example `POST /api/contact` body:
 
@@ -105,4 +80,3 @@ vercel --prod
 - This is a static site, so no build step is required.
 - Vercel automatically serves static files and `/api/*` serverless functions.
 - `.vercel/` and `node_modules/` are ignored via `.gitignore`.
-- `.env.local` is ignored, so secret keys are not committed.

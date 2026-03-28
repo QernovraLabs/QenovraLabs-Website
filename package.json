@@ -2,7 +2,7 @@
   "name": "qenovra-labs-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Qenovra Labs static website with Vercel serverless API endpoints",
+  "description": "Qenovra Lab static website with Vercel serverless API endpoints",
   "scripts": {
     "dev": "npx --yes vercel dev",
     "start": "npx --yes http-server . -p 5500",
