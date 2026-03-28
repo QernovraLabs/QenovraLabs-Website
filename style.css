@@ -109,11 +109,16 @@ img { max-width: 100%; }
 
 .brand-logo {
   display: block;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 34%;
 }
 
 .brand-logo-nav {
-  height: 28px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
 }
 .nav-links {
   display: flex;
@@ -626,7 +631,9 @@ img { max-width: 100%; }
 }
 
 .brand-logo-footer {
-  height: 34px;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
 }
 .footer-tagline {
   font-size: 13px;
